@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Chal Chitra Club</title>
+</head>
+
+<body>
+    <section class="showcase">
+        <header>
+            <h2 class="logo">Chal Chitra Club</h2>
+            <div class="toggle"></div>
+        </header>
+
+        <video src="Background_Video.mp4" muted loop autoplay></video>
+
+        <div class="overlay"></div>
+
+        <div class="text">
+            <h2>Capturing Moment</h2>
+            <h3>Creating Memories</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quae voluptas nostrum cum eaque eos libero
+                doloremque quam exercitationem ea.</p>
+            <a href="#">Read More</a>
+        </div>
+
+        <ul class="social">
+            <li><a href="#"><img src="facebook.png" alt=""></a></li>
+            <li><a href="#"><img src="twitter.png" alt=""></a></li>
+            <li><a href="#"><img src="instagram.png" alt=""></a></li>
+        </ul>
+    </section>
+
+    <div class="menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Members</a></li>
+        </ul>
+    </div>
+    <script>
+        const menuToggle = document.querySelector('.toggle');
+        const showcase = document.querySelector('.showcase');
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            showcase.classList.toggle('active');
+        })
+    </script>
+</body>
+
+</html>
